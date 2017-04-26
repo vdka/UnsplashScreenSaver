@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UnsplashScreenSaver" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ijh-P4-VcO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:43" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mcl-Xu-LCe">
+                                <rect key="frame" x="138.5" y="120" width="98" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="48"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ijh-P4-VcO" secondAttribute="trailing" id="6KO-Gp-oub"/>
+                            <constraint firstItem="Mcl-Xu-LCe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="8uB-8e-PVj"/>
+                            <constraint firstItem="ijh-P4-VcO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ob1-2z-x0i"/>
+                            <constraint firstItem="ijh-P4-VcO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="f7I-y6-gH0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ijh-P4-VcO" secondAttribute="bottom" id="pze-Mj-qDq"/>
+                            <constraint firstItem="Mcl-Xu-LCe" firstAttribute="centerX" secondItem="ijh-P4-VcO" secondAttribute="centerX" id="vPL-RJ-buy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="ijh-P4-VcO" id="dJQ-YH-93d"/>
+                        <outlet property="timeLabel" destination="Mcl-Xu-LCe" id="oUh-ss-7Ds"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-423.19999999999999" y="-1.3493253373313345"/>
+        </scene>
+    </scenes>
+</document>
